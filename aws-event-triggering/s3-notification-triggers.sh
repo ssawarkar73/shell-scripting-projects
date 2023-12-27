@@ -9,7 +9,7 @@ aws_account_id=$(aws sts get-caller-identity --query 'Account' --output text)
 echo "AWS Account ID: "181413454460"
 
 # Set AWS region and bucket name
-aws_region="us-east-1"
+aws_region="ap-south-1"
 bucket_name="saurabh-ultimate-bucket"
 lambda_func_name="s3-lambda-function"
 role_name="s3-lambda-sns"
