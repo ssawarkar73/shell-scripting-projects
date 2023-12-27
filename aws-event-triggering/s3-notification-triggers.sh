@@ -98,12 +98,10 @@ echo "SNS Topic ARN: $topic_arn"
 aws sns subscribe \
   --topic-arn "$topic_arn" \
   --protocol email \
-  --notification-endpoint "$email_address"
+  --notification-endpoint "ssawarkar73@gmail.com"
 
 # Publish SNS
 aws sns publish \
   --topic-arn "$topic_arn" \
   --subject "A new object created in s3 bucket" \
   --message "Hello from Abhishek.Veeramalla YouTube channel, Learn DevOps Zero to Hero for Free"
-
-
